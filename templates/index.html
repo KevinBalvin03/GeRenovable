@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generacion Renovable</title>
+    <link rel="icon" href="{{ url_for('static', path='/img/mainLogo.png')}}">
+    <link rel="stylesheet" href="{{ url_for('static', path='/css/stylesIndex.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- <script src="{{url_for('static', path='/js/script.js')}}" defer> </script>     -->
+</head>
+
+<body>
+    <div id="divcontainer">
+        <div id="divprincipal">
+            <div id="divLogo">
+                <img id="logoNav" src="{{ url_for('static', path='/img/mainLogo.png')}}" alt="LogoMAIN">
+                <h1 class="titlepoppins">Generacion Renovable</h1>
+            </div>
+            <nav class="titlepoppins">
+                <a id="aInicio" href="/">Inicio</a>
+                <a href="/Miconsumo">Mi consumo</a>
+                <a href="/History">Historia</a>
+                <a href="/Qsomos">Quienes Somos</a>
+            </nav>
+
+        </div>
+        <div id="CuerpoIndex" class="textpoppins">
+            <h1 class="titlepoppins">Energias Renovables</h1>
+            <div class="textIndex">
+                <p>La energía es la capacidad de realizar un trabajo o generar un cambio. Es fundamental para todo lo
+                    que ocurre a nuestro alrededor, desde el movimiento de los planetas hasta las actividades cotidianas
+                    como encender una luz o cocinar.</p>
+                <p>Existen diversas formas de energía, como la térmica, eléctrica, mecánica y química, que se pueden
+                    transformar entre sí para satisfacer nuestras necesidades. Entender y gestionar la energía es clave
+                    para el desarrollo y el bienestar de las sociedades.</p><br><br>
+
+                <h4 class="subtitlepoppins">¿Qué son las energías renovables y por qué son importantes?</h4>
+                <p>Las energías renovables son fuentes de energía limpias y sostenibles que se obtienen de recursos
+                    naturales como el sol, el viento, el agua y la biomasa. A diferencia de los combustibles fósiles,
+                    estas fuentes son inagotables y su impacto ambiental es mínimo.</p>
+                <p>Son esenciales para combatir el cambio climático, reducir la contaminación y garantizar un futuro
+                    energético sostenible. Además, promueven la independencia energética y el desarrollo económico en
+                    todo el mundo.</p><br><br>
+            </div>
+            <h4 id="h4s1" class="titlepoppins">Las energías del futuro</h4><br>
+            <div id="seccionIndex">
+                <div id="Energia1">
+                    <img src="{{url_for('static', path='/img/Energia1.png')}}" alt="Energia1">
+                    <div class="Energia1Text">
+                        <h3>Energia renovable de Hidrogeno</h5>
+                            <p class="pEnergy">El hidrogeno es el elemento mas abundante del universo y es una molécula
+                                muy inflamable, capaz de mantener ardiendo las estrellas por millones de años. La
+                                desventaja que tiene este es que en la naturaleza se encuentra unido a otras moléculas.
+                            </p>
+                            <a id="bottomHidrogeno" href="/EHidrogeno">Leer mas</a>
+                    </div>
+                </div>
+
+                <div id="Energia2">
+                    <img src="{{url_for('static', path='/img/Energia2.png')}}" alt="Energia2">
+                    <div id="Energia2Text">
+                        <h3>Energia renovable Marina</h5>
+                            <p class="pEnergy">Los océanos constituyen gran parte de la superficie del planeta, siendo
+                                una masa liquida en constante movimiento se descubrió su gran valor como fuente de
+                                energía. Atreves de las mareas y olas se podría cubrir el consumo de una decima parte de
+                                la población mundial.</p>
+                            <a id="bottomMarina" href="/EMarina">Leer mas</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <footer class="textpoppins">
+            <div id="divFooter">
+                <h4>Generación Renovable</h4>
+                <p>Promoviendo un futuro sostenible 🌱</p>
+                <p>📍 Ubicación: 123 Calle Verde, Medellin, Colombia </p>
+                <p>📞 Contáctanos: +123 456 789</p>
+                <p>📧 Correo: contacto@generacionrenovable.com</p>
+            </div>
+            <div id="redesfooter">
+                <p>🌐 Síguenos en redes sociales:</p>
+                <p>Facebook | Twitter | Instagram | LinkedIn</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

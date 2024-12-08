@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generacion Renovable</title>
+    <link rel="icon" href="{{ url_for('static', path='/img/mainLogo.png')}}">
+    <link rel="stylesheet" href="{{ url_for('static', path='/css/stylesConsumo.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="divcontainer">
+        <div id="divprincipal">
+            <div id="divLogo">
+                <img id="logoNav" src="{{ url_for('static', path='/img/mainLogo.png')}}" alt="LogoMAIN">
+                <h1 class="titlepoppins">Generacion Renovable</h1>
+            </div>
+            <nav class="titlepoppins">
+                <a id="aInicio" href="/">Inicio</a>
+                <a id="aPrincipal" href="/Miconsumo">Mi consumo</a>
+                <a href="/History">Historia</a>
+                <a href="/Qsomos">Quienes Somos</a>
+            </nav>
+
+        </div>
+        <div id="CuerpoIndex" class="textpoppins">
+            <h1>Conoce tu consumo</h1>
+            <p>Este apartado esta dedicado a que conozcas tu consumo general comparado con el promedio nacional, en el
+                siguiente espacio por favir
+                digita tu consumo de electricidad aproximado en kilowatts (kWh) en el mes pasado.
+            </p>
+            <div id="formConsumo">
+                <form method="POST" action="/Miconsumo">
+                    <label for="ClienteConsumo"> <strong>Consumo (kWh):</strong></label>
+                    <input type="number" id="ClienteConsumo" name="ClienteConsumo" placeholder="Ejemplo: 300"
+                        required>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+
+            {% if mensaje %}
+            <div id="resultadoConsumo" class="resultado">
+                <h2>Resultado:</h2>
+                <p>{{ mensaje }}</p>
+            </div>
+            {% endif %}
+        </div>
+        <footer class="textpoppins">
+            <div id="divFooter">
+                <h4>Generación Renovable</h4>
+                <p>Promoviendo un futuro sostenible 🌱</p>
+                <p>📍 Ubicación: 123 Calle Verde, Medellin, Colombia </p>
+                <p>📞 Contáctanos: +123 456 789</p>
+                <p>📧 Correo: contacto@generacionrenovable.com</p>
+            </div>
+            <div id="redesfooter">
+                <p>🌐 Síguenos en redes sociales:</p>
+                <p>Facebook | Twitter | Instagram | LinkedIn</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
