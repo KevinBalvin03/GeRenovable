@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi consumo</title>
+    <link rel="stylesheet" href="{{url_for('static', path='/css/stylesConsumo.css')}}">
+</head>
+<body>
+    <h1>Consumo</h1>
+    <form method="POST" action="/recibe/info">
+        <label for="ClienteConsumo">Consumo:</label>
+        <input type="text" name="ClienteConsumo" placeholder="Ingrese consumo" required>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

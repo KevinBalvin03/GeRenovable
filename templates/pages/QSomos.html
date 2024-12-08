@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generacion Renovable</title>
+    <link rel="icon" href="{{url_for('static', path='/img/mainLogo.png')}}">
+    <link rel="stylesheet" href="{{url_for('static', path='/css/stylesQsomos.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    </head>
+
+<body>
+    <div id="divcontainer">
+        <div id="divprincipal">
+            <img id="logoNav" src="{{url_for('static', path='/img/mainLogo.png')}}" alt="LogoMAIN">
+            <h1 class="titlepoppins">Generacion Renovable</h1>
+            <nav  class="titlepoppins">
+                <a id="aInicio" href="/">Inicio</a>
+                <a href="/History">Historia</a>
+                <a id="aPrincipal" href="/Qsomos">Quienes Somos</a>
+            </nav>
+        </div>
+        <div id="Cuerpo" class="textpoppins">
+            <h1 class="titlepoppins">Quienes somos</h1>
+            <div id="QsomosText">
+            <p>En Generación Renovable, creemos en el poder transformador de la energía renovable para construir un futuro más sostenible. Somos un equipo apasionado por el medio ambiente y comprometido con la divulgación de información clara, confiable y actualizada sobre las energías limpias.</p>
+            <p>Nuestra misión es inspirar y educar a personas, empresas y comunidades sobre la importancia de adoptar fuentes de energía renovables, promoviendo prácticas responsables que reduzcan el impacto ambiental y favorezcan la transición hacia un planeta más verde.</p>
+            <p>A través de nuestra plataforma, buscamos ser un puente entre la tecnología, la sostenibilidad y la acción, proporcionando herramientas y conocimiento para que todos podamos contribuir a un mundo más equilibrado y saludable.</p>
+            <p>¡Únete a nuestra misión y sé parte de la generación que impulsa el cambio!</p>
+            <img src="{{url_for('static',path='/img/qsomosimg1.jpg')}}" alt="QsomosImg1">
+        </div>
+        </div>
+        <footer class="textpoppins">
+            <div id="divFooter">
+                <h4>Generación Renovable</h4>
+                <p>Promoviendo un futuro sostenible 🌱</p>
+                <p>📍 Ubicación: 123 Calle Verde, Medellin, Colombia </p>
+                <p>📞 Contáctanos: +123 456 789</p> 
+                <p>📧 Correo: contacto@generacionrenovable.com</p>
+            </div>
+            <div id="redesfooter">
+                <p>🌐 Síguenos en redes sociales:</p>
+                <p>Facebook | Twitter | Instagram | LinkedIn</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
