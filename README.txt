@@ -8,3 +8,5 @@ pip install python-multipart
 
 venv\Scripts\Activate.ps1  //si es powershell venv\Scripts\activate.bat
 uvicorn main:app --reload
+
+Si se esta en el repositorio GitHub la rama a descargar es la rama Master
